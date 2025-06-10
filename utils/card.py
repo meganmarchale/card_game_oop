@@ -39,7 +39,7 @@ class Deck:
         self.values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
         self.full_deck = []
     
-    def create_deck(self):
+    def fill_deck(self):
         for icon in self.icons:
             for value in self.values:
                 self.full_deck.append(icon + value)
@@ -47,7 +47,7 @@ class Deck:
 
 
 my_deck = Deck()
-deck_list = my_deck.create_deck()
+deck_list = my_deck.fill_deck()
 
 print(deck_list)
 
